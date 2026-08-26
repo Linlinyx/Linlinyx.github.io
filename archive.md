@@ -1,0 +1,19 @@
+---
+layout: page
+title: 归档
+permalink: /archive/
+---
+
+## 所有文章
+
+{% for post in site.posts %}
+  {% assign currentyear = post.date | date: "%Y" %}
+  {% if currentyear != year %}
+    {% unless forloop.first %}</ul>{% endunless %}
+    <h3>{{ currentyear }}</h3>
+    <ul>
+    {% assign year = currentyear %}
+  {% endif %}
+    <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a> - {{ post.date | date: "%Y年%m月%d日" }}</li>
+  {% if forloop.last %}</ul>{% endif %}
+{% endfor %}
