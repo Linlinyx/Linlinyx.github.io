@@ -10,3 +10,7 @@
 .page-header h1 {
     font-size: 1.0rem;
 }
+
+body {
+    background-color: red !important;
+}
