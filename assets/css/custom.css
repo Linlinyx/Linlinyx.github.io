@@ -63,7 +63,7 @@
     
 /* 调整网页名字特效*/    
 .navbar-custom .navbar-brand {
-    color: #ffffff !important;
+    //color: #ffffff !important;
     transition: text-shadow 0.3s ease;
 }
 
