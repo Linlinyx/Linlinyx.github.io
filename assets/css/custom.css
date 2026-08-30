@@ -55,7 +55,7 @@
     color: #ffffff !important;  /* 白色文字 */
 }
 /* 调整网页名字颜色*/
-//.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand {
     //color: #ffffff !important;  /* 白色文字 */
 }
 .navbar-custom .nav-link:hover {
