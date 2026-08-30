@@ -60,6 +60,7 @@
 }
 .navbar-custom .nav-link:hover {
     color: #cccccc !important;  /* 悬停时浅灰色 */
+    
 /* 调整网页名字特效*/    
 .navbar-custom .navbar-brand {
     position: relative;
