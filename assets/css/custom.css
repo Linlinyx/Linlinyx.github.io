@@ -63,28 +63,10 @@
     
 /* 调整网页名字特效*/    
 .navbar-custom .navbar-brand {
-    position: relative;
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-    text-decoration: none !important;
-}
-
-.navbar-custom .navbar-brand::after {
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0%;
-    height: 2px;
-    background: #f0a500;
-    transition: width 0.3s ease-in-out;
+    transition: text-shadow 0.3s ease;
 }
 
 .navbar-custom .navbar-brand:hover {
-    color: #f0a500 !important;
-    transform: scale(1.05);
-}
-
-.navbar-custom .navbar-brand:hover::after {
-    width: 100%;
+    color: #ffffff !important;
+    text-shadow: 0 0 10px #f0a500, 0 0 20px #f0a500, 0 0 30px #f0a500;
 }
