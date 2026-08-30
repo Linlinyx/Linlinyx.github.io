@@ -54,19 +54,22 @@
 .navbar-custom .nav-link {
     color: #ffffff !important;  /* 白色文字 */
 }
+.navbar-custom .nav-link:hover {
+    color: #cccccc !important;  /* 悬停时浅灰色 */
+    
 /* 调整网页名字颜色*/
 .navbar-custom .navbar-brand {
     color: #ffffff !important;  /* 白色文字 */
 }
-.navbar-custom .nav-link:hover {
-    color: #cccccc !important;  /* 悬停时浅灰色 */
-    
-/* 调整网页名字特效*/    
-.navbar-custom .navbar-brand {
-    //color: #ffffff !important;
     transition: text-shadow 0.3s ease;
 }
-
 .navbar-custom .navbar-brand:hover {
     text-shadow: 0 0 10px #f0a500, 0 0 20px #f0a500, 0 0 30px #f0a500;
+}
+
+    
+/* 调整网页名字特效*/    
+//.navbar-custom .navbar-brand {
+    //color: #ffffff !important;
+    //transition: text-shadow 0.3s ease;
 }
