@@ -58,7 +58,7 @@
     color: #cccccc !important;  /* 悬停时浅灰色 */
     
 /* 调整网页名字颜色*/
-.navbar-custom .navbar-brand {
+.navbar-custom .navbar-brand, .navbar-custom .navbar-nav .nav-link {
     color: #ffffff !important;  /* 白色文字 */
 }
     transition: text-shadow 0.3s ease;
