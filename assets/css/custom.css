@@ -1,18 +1,18 @@
 ---
 ---
 
-/* 文章详情页标题 */
-.post h1,
-.post-title,
-.post-header h1,
-.post-container h1 {
-    font-size: 1.8rem !important;
+/* 首页标题（通常指博客首页的大标题） */
+.intro-header .page-heading h1 {
+    font-size: 2.8rem !important;  /* 调整首页标题大小 */
+}
+
+/* 文章详情页标题（单篇文章的标题） */
+.intro-header .post-heading h1 {
+    font-size: 2.0rem !important;  /* 调整文章页标题大小 */
 }
 
 /* 独立页面标题（关于、归档等） */
-.page h1,
-.page-title,
-.page-header h1,
-.page-container h1 {
-    font-size: 2.2rem !important;
+.page .intro-header .page-heading h1,
+.page-header h1 {
+    font-size: 2.4rem !important;
 }
