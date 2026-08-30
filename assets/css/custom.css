@@ -15,3 +15,44 @@
 .intro-header .page-heading h1 {
     font-size: 2.4rem !important;
 }
+
+/* ===== 1. 固定导航栏为紧凑状态（收缩后的长度） ===== */
+.navbar-custom {
+    /* 控制导航栏高度：减小上下内边距，让导航栏更紧凑 */
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    min-height: 50px !important;  /* 根据实际需要调整 */
+
+    /* ===== 2. 自定义背景色（示例为半透明深色） ===== */
+    background: rgba(30, 30, 30, 0.9) !important;
+    /* 如果你想要背景图片，把上面这行注释掉，取消下面这行的注释 */
+    /* background: url('/assets/img/your-background.jpg') center/cover no-repeat !important; */
+}
+
+/* ===== 3. 让 Logo 也保持紧凑尺寸（收缩时的大小） ===== */
+.navbar-custom .navbar-brand-logo img {
+    height: 2.0rem !important;  /* 收缩状态的 Logo 大小，可自行调整 */
+}
+
+/* ===== 4. 强制覆盖滚动时添加的类，使其样式与普通状态完全一致 ===== */
+.navbar-custom.top-nav-short,
+.navbar-custom.top-nav-short-permanent {
+    padding-top: 5px !important;
+    padding-bottom: 5px !important;
+    min-height: 50px !important;
+    background: rgba(30, 30, 30, 0.9) !important;  /* 与上面背景保持一致 */
+    /* 如果用了背景图片，这里也要同步 */
+    /* background: url('/assets/img/your-background.jpg') center/cover no-repeat !important; */
+}
+
+.navbar-custom.top-nav-short .navbar-brand-logo img,
+.navbar-custom.top-nav-short-permanent .navbar-brand-logo img {
+    height: 2.0rem !important;
+}
+
+/* ===== 5. （可选）调整导航链接文字颜色，以适应深色背景 ===== */
+.navbar-custom .nav-link {
+    color: #ffffff !important;  /* 白色文字 */
+}
+.navbar-custom .nav-link:hover {
+    color: #cccccc !important;  /* 悬停时浅灰色 */
