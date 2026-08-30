@@ -62,15 +62,11 @@
     color: #cccccc !important;  /* 悬停时浅灰色 */
     
 /* 调整网页名字特效*/    
-/* 重新定义普通状态和悬停状态 */
 .navbar-custom .navbar-brand {
-    color: #ffffff;  /* 不需要 !important */
-    transition: text-shadow 0.3s ease, color 0.3s ease;
+    color: #ffffff;
+    transition: text-shadow 0.3s ease;
 }
 
 .navbar-custom .navbar-brand:hover {
-    color: #f0a500 !important;  /* 悬停时变色 */
-    text-shadow: 0 0 10px #f0a500, 0 0 20px #f0a500, 0 0 30px #f0a500;
-}
     text-shadow: 0 0 10px #f0a500, 0 0 20px #f0a500, 0 0 30px #f0a500;
 }
