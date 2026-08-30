@@ -1,16 +1,18 @@
 ---
 ---
 
-/* 调整博客文章页面的标题大小 */
-.post-header h1 {
-    font-size: 1.0rem;
+/* 文章详情页标题 */
+.post h1,
+.post-title,
+.post-header h1,
+.post-container h1 {
+    font-size: 1.8rem !important;
 }
 
-/* 调整独立页面（如“关于我”）的标题大小 */
-.page-header h1 {
-    font-size: 1.0rem;
-}
-
-body {
-    background-color: #4682B4;
+/* 独立页面标题（关于、归档等） */
+.page h1,
+.page-title,
+.page-header h1,
+.page-container h1 {
+    font-size: 2.2rem !important;
 }
