@@ -1,19 +1,29 @@
 {% if site.post_search %}
 
+<!-- 原有的覆盖层搜索（保留，但你如果不想要覆盖层可以删掉） -->
 <div id="beautifuljekyll-search-overlay">
-
   <div id="nav-search-exit" title="Exit search">✕</div>
-  <input type="text" id="nav-search-input" placeholder="搜索">
+  <input type="text" id="nav-search-input" placeholder="搜索文章...">
   <ul id="search-results-container"></ul>
-  
-  <script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
-  <script>
-    SimpleJekyllSearch({
-      searchInput: document.getElementById('nav-search-input'),
-      resultsContainer: document.getElementById('search-results-container'),
-      json: '{{ site.baseurl }}/assets/data/searchcorpus.json' 
-    });
-  </script>
 </div>
+
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // 初始化搜索
+    SimpleJekyllSearch({
+      searchInput: document.getElementById('nav-search-input-inline'),
+      resultsContainer: document.getElementById('search-results-container'),
+      json: '{{ site.baseurl }}/assets/data/searchcorpus.json'
+    });
+    
+    // 可选：如果还想保留覆盖层搜索，可以同时绑定两个输入框
+    // SimpleJekyllSearch({
+    //   searchInput: document.getElementById('nav-search-input'),
+    //   resultsContainer: document.getElementById('search-results-container'),
+    //   json: '{{ site.baseurl }}/assets/data/searchcorpus.json'
+    // });
+  });
+</script>
 
 {% endif %}
