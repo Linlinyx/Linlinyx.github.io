@@ -74,3 +74,59 @@
     //color: #ffffff !important;
     //transition: text-shadow 0.3s ease;
 }
+
+---
+---
+
+/* ===== 导航栏内联搜索框样式 ===== */
+#nav-search-inline {
+    margin-left: 10px;
+}
+
+.nav-search-input {
+    height: 32px !important;
+    padding: 4px 12px !important;
+    font-size: 0.9rem !important;
+    border: 1px solid rgba(255,255,255,0.3) !important;
+    border-radius: 20px !important;  /* 圆角搜索框 */
+    background: rgba(255,255,255,0.15) !important;
+    color: #fff !important;
+    transition: all 0.3s ease !important;
+    width: 160px !important;
+    outline: none !important;
+}
+
+/* 搜索框聚焦时的样式 */
+.nav-search-input:focus {
+    background: rgba(255,255,255,0.25) !important;
+    border-color: rgba(255,255,255,0.6) !important;
+    width: 220px !important;  /* 聚焦时变宽，更美观 */
+    box-shadow: 0 0 8px rgba(255,255,255,0.1) !important;
+}
+
+/* 搜索框占位文字颜色 */
+.nav-search-input::placeholder {
+    color: rgba(255,255,255,0.6) !important;
+    font-size: 0.8rem !important;
+}
+
+/* 如果导航栏是浅色背景，使用深色文字 */
+.navbar-light .nav-search-input {
+    border-color: rgba(0,0,0,0.15) !important;
+    background: rgba(0,0,0,0.05) !important;
+    color: #333 !important;
+}
+.navbar-light .nav-search-input::placeholder {
+    color: rgba(0,0,0,0.4) !important;
+}
+.navbar-light .nav-search-input:focus {
+    background: rgba(0,0,0,0.08) !important;
+    border-color: rgba(0,0,0,0.3) !important;
+}
+
+/* ===== 在移动端（窄屏）隐藏内联搜索框，或调整大小 ===== */
+@media (max-width: 991.98px) {
+    #nav-search-inline {
+        display: none !important;  /* 移动端隐藏，避免拥挤 */
+    }
+}
