@@ -1,23 +1,23 @@
 ###########################################################
-### Welcome to Beautiful Jekyll!
-### This config file is meant for settings that affect your entire website. When you first
-### set up your website you should go through all these settings and edit them, but after
-### the initial set up you won't need to come back to this file often.
+### Welcome to Beautiful Jekyll!欢迎来到 Beautiful Jekyll！
+### This config file is meant for settings that affect your entire website. When you first本配置文件用于设置影响整个网站的选项。在首次
+### set up your website you should go through all these settings and edit them, but after设置网站时，您需要逐一查看并编辑这些设置，但完成
+### the initial set up you won't need to come back to this file often.初始设置后，通常无需频繁返回此文件进行修改。
 ###########################################################
 
-############################
-# --- Required options --- #
-############################
+###################################
+# --- Required options必需选项 --- #
+###################################
 
-# Name of website
+# Name of website网站名称
 title: 猫寝室
 
-# Your name to show in the footer
+# Your name to show in the footer页脚显示的您的姓名
 author: Koneko
 
-###############################################
-# --- List of links in the navigation bar --- #
-###############################################
+###############################################################
+# --- List of links in the navigation bar导航栏中的链接列表 --- #
+###############################################################
 
 navbar-links:
   关于: "关于"
@@ -28,25 +28,31 @@ navbar-links:
 # --- Logo --- #
 ################
 
-# Image to show in the navigation bar - works best with a square image
-# Remove this parameter if you don't want an image in the navbar
+# Image to show in the navigation bar - works best with a square image导航栏中显示的图片——最好使用方形图片  
+# Remove this parameter if you don't want an image in the navbar如果不想在导航栏中显示图片，请移除此参数
 
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
+#默认情况下，图片会被裁剪成圆形。您可以通过设置 'round-avatar: false' 来禁用此行为。
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
+#如果你想在左上角显示图片标志，而不是网站标题，
 # then specify the following parameter
+#请指定以下参数
 #title-img: /path/to/image
 
 
 #####################################
-# --- Footer social media links --- #
+# --- Footer social media links 社交媒体链接--- #
 #####################################
 
 # Select the social network links that you want to show in the footer.
 # You can change the order that they show up on the page by changing the order here.
 # Uncomment the links you want to show and add your information to each one.
+# 选择您希望在页脚中显示的社交网络链接。  
+# 您可以通过在此处调整顺序来改变它们在页面上的显示顺序。  
+# 取消注释您想显示的链接，并在每个链接中添加您的信息。
 social-network-links:
 #  email: "someone@example.com"
   
@@ -82,15 +88,15 @@ social-network-links:
 #  untappd: yourname
 #  strava: youruserid
 
-# If you want your website to generate an RSS feed, provide a description
-# The URL for the feed will be https://<your_website>/feed.xml
+# If you want your website to generate an RSS feed, provide a description如果你想让你的网站生成RSS订阅源，请提供一个描述。  
+# The URL for the feed will be https://<your_website>/feed.xml订阅源的URL将是 https://<你的网站>/feed.xml
 rss-description: This website is a virtual proof that I'm awesome
 
 ###########################
-# --- General options --- #
+# --- General options通用选项 --- #
 ###########################
 
-# Select which social network share links to show in posts
+# Select which social network share links to show in posts选择要在帖子中显示的社交网络分享链接
 share-links-active:
   twitter: false
   facebook: false
@@ -98,41 +104,51 @@ share-links-active:
   vk: false
   reddit: false
 
-# How to display the link to your website in the footer
-# Remove this if you don't want a link in the footer
+# How to display the link to your website in the footer如何在页脚显示网站链接  
+# Remove this if you don't want a link in the footer如果不想在页脚显示链接，请移除此设置  
 url-pretty: "MyWebsite.com"
 
-# Add the website title to the title of every page
-title-on-all-pages: true
+# Add the website title to the title of every page在每页标题中添加网站名称  
+title-on-all-pages: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
+# 摘要字数长度——将信息流页面上每篇文章的摘要截断为指定数量的单词
 excerpt_length: 50
 
 # Whether or not to show an excerpt for every blog post in the feed page
+# 是否在信息流页面中为每篇博客文章显示摘要  
 feed_show_excerpt: true
 
 # Whether or not to show a list of tags below each post preview in the feed page
+# 是否在信息流页面中为每篇文章预览下方显示标签列表  
 feed_show_tags: true
 
 # Add a search button to the navbar
+# 在导航栏中添加搜索按钮  
 post_search: true
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
+# 在页脚添加一个编辑当前页面的按钮。仅当您的网站托管在 GitHub 上时有效 
 edit_page_button: false
 
 # Allow sub-menu items (second-level navigation menu items) to be longer than the top-level menu
 # If this setting is off, then long sub-menu words might get cut off
 # See https://github.com/daattali/beautiful-jekyll/issues/765 to understand the issue this setting can solve
+# 允许子菜单项（二级导航菜单项）比顶级菜单更长  
+# 如果此设置关闭，较长的子菜单文字可能会被截断  
+# 请参见 https://github.com/daattali/beautiful-jekyll/issues/765 以了解此设置可解决的问题  
 navbar-var-length: false
 
 # The keywords to associate with your website, for SEO purposes
+# 用于网站SEO的关键词 
 #keywords: "my,list,of,keywords"
 
 ######################################
-# --- Colours / background image --- #
+# --- Colours / background image颜色 / 背景图片  --- #
 ######################################
 
 # Personalize the colours in your website. Colour values can be any valid CSS colour
+# 自定义您网站的颜色。颜色值可以是任何有效的 CSS 颜色
 
 page-col: "#FFFFFF"
 text-col: "#404040"
@@ -148,31 +164,36 @@ footer-hover-col: "#0085A1"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
-
+# 或者，可以将导航栏、页脚和页面背景设置为图片，而不是颜色
 #navbar-img: "/assets/img/bgimage.png"
 #footer-img: "/assets/img/bgimage.png"
 #page-img: "/assets/img/bgimage.png"
 
 # Suggest a colour for mobile browsers to use as the browser's theme. This is only supported by a few mobile browsers.
+# 建议一种颜色，供移动浏览器用作浏览器主题。此功能仅部分移动浏览器支持。
 #mobile-theme-col: "#0085A1"
 
 # For any extra visual customization, you can include additional CSS files in every page on your site. List any custom CSS files here
+# 如需进行额外的视觉定制，您可以在网站的每个页面中添加额外的CSS文件。请在此列出所有自定义CSS文件
 site-css:
 # 自定义 CSS 文件，标题字号大小
   - "/assets/css/custom.css"
 
 # If you have common JavaScript files that should be included in every page, list them here
+# 如果有一些通用的 JavaScript 文件应该包含在每个页面中，请在此列出它们
 #site-js:
 #  - "/assets/js/custom-script.js"
 
 #################################
-# --- Web Analytics Section --- #
+# --- Web Analytics Section网络分析部门 --- #
 #################################
 
 # Fill in your Google Analytics tag ID (or "Measurement ID") to track your website usage
+# 填入您的 Google Analytics 标签 ID（或“测量 ID”）以跟踪网站使用情况  
 #gtag: "G-XXXXXXXXXX"
 
 # Fill in your Cloudflare Analytics beacon token to track your website using Cloudflare Analytics
+# 填入您的 Cloudflare Analytics 信标令牌，以通过 Cloudflare Analytics 跟踪您的网站  
 #cloudflare_analytics: ""
 
 # Google Tag Manager ID
@@ -181,6 +202,8 @@ site-css:
 # Matomo (aka Piwik) Web statistics
 # Uncomment the following section to enable Matomo. The opt-out parameter controls
 # whether or not you want to allow users to opt out of tracking.
+# Matomo（即 Piwik）网页统计  
+# 解除以下部分注释以启用 Matomo。opt-out 参数用于控制是否允许用户选择退出跟踪。  
 #matomo:
 #  site_id: "9"
 #  uri: "demo.wiki.pro"
@@ -189,6 +212,8 @@ site-css:
 # Google Universal Analytics ID -- deprecated
 # As of July 2023 this is no longer supported by Google! If you are still using `google_analytics`,
 # you should switch to using the `gtag` field above instead.
+# Google 普适分析 ID — 已弃用  
+# 自 2023 年 7 月起，Google 已不再支持此功能！如果您仍在使用 `google_analytics`，请改用上方的 `gtag` 字段。  
 #google_analytics: "UA-XXXXXXXX-X"
 
 ####################
