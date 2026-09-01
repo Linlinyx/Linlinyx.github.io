@@ -104,11 +104,14 @@ share-links-active:
   vk: false
   reddit: false
 
-# How to display the link to your website in the footer如何在页脚显示网站链接  
-# Remove this if you don't want a link in the footer如果不想在页脚显示链接，请移除此设置  
+# How to display the link to your website in the footer\
+# 如何在页脚显示网站链接  
+# Remove this if you don't want a link in the footer
+# 如果不想在页脚显示链接，请移除此设置  
 url-pretty: "MyWebsite.com"
 
-# Add the website title to the title of every page在每页标题中添加网站名称  
+# Add the website title to the title of every page
+# 在每页标题中添加网站名称  
 title-on-all-pages: false
 
 # Excerpt word length - Truncate the excerpt of each post on the feed page to the specified number of words
@@ -126,6 +129,8 @@ feed_show_tags: true
 # Add a search button to the navbar
 # 在导航栏中添加搜索按钮  
 post_search: true
+# 如果只想搜索标题，设为 false
+search_full_content: false
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
 # 在页脚添加一个编辑当前页面的按钮。仅当您的网站托管在 GitHub 上时有效 
