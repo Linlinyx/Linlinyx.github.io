@@ -7,27 +7,14 @@
   <ul id="search-results-container"></ul>
 </div>
 
-<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var searchJson = '{{ site.baseurl }}/searchcorpus.json';
-    // 绑定内联搜索框（新添加的）
+    var searchJson = '{{ site.baseurl }}/searchcorpus.json';  // 改为根目录的路径
+    
     var inlineInput = document.getElementById('nav-search-input-inline');
     if (inlineInput) {
       SimpleJekyllSearch({
         searchInput: inlineInput,
-        resultsContainer: document.getElementById('search-results-container'),
-        json: searchJson,
-        searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-        noResultsText: '没有找到文章'
-      });
-    }
-
-    // 绑定覆盖层搜索框（原有的）
-    var overlayInput = document.getElementById('nav-search-input');
-    if (overlayInput) {
-      SimpleJekyllSearch({
-        searchInput: overlayInput,
         resultsContainer: document.getElementById('search-results-container'),
         json: searchJson,
         searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
