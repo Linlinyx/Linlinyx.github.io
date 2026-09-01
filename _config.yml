@@ -1,18 +1,24 @@
 ###########################################################
-### Welcome to Beautiful Jekyll!欢迎来到 Beautiful Jekyll！
-### This config file is meant for settings that affect your entire website. When you first本配置文件用于设置影响整个网站的选项。在首次
-### set up your website you should go through all these settings and edit them, but after设置网站时，您需要逐一查看并编辑这些设置，但完成
-### the initial set up you won't need to come back to this file often.初始设置后，通常无需频繁返回此文件进行修改。
+### Welcome to Beautiful Jekyll!
+### This config file is meant for settings that affect your entire website. When you first
+### set up your website you should go through all these settings and edit them, but after
+### the initial set up you won't need to come back to this file often.
+### 欢迎来到 Beautiful Jekyll！
+### 本配置文件用于设置影响整个网站的选项。在首次
+### 设置网站时，您需要逐一查看并编辑这些设置，但完成
+### 初始设置后，通常无需频繁返回此文件进行修改。
 ###########################################################
 
 ###################################
 # --- Required options必需选项 --- #
 ###################################
 
-# Name of website网站名称
+# Name of website
+# 网站名称
 title: 猫寝室
 
-# Your name to show in the footer页脚显示的您的姓名
+# Your name to show in the footer
+# 页脚显示的您的姓名
 author: Koneko
 
 ###############################################################
@@ -28,18 +34,19 @@ navbar-links:
 # --- Logo --- #
 ################
 
-# Image to show in the navigation bar - works best with a square image导航栏中显示的图片——最好使用方形图片  
-# Remove this parameter if you don't want an image in the navbar如果不想在导航栏中显示图片，请移除此参数
-
+# Image to show in the navigation bar - works best with a square image
+# Remove this parameter if you don't want an image in the navbar
+# 导航栏中显示的图片——最好使用方形图片  
+# 如果不想在导航栏中显示图片，请移除此参数
 
 # By default, the image is cut into a circle. You can disable this behaviour by setting 'round-avatar: false'
-#默认情况下，图片会被裁剪成圆形。您可以通过设置 'round-avatar: false' 来禁用此行为。
+# 默认情况下，图片会被裁剪成圆形。您可以通过设置 'round-avatar: false' 来禁用此行为。
 round-avatar: true
 
 # If you want to have an image logo in the top-left corner instead of having the title of the website,
-#如果你想在左上角显示图片标志，而不是网站标题，
+# 如果你想在左上角显示图片标志，而不是网站标题，
 # then specify the following parameter
-#请指定以下参数
+# 请指定以下参数
 #title-img: /path/to/image
 
 
@@ -128,7 +135,7 @@ feed_show_tags: true
 
 # Add a search button to the navbar
 # 在导航栏中添加搜索按钮  
-post_search: true
+post_search: false
 # 如果只想搜索标题，设为 false
 search_full_content: false
 
