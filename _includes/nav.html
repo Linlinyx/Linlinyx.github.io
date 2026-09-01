@@ -31,15 +31,6 @@
       </li>
     {%- endif -%}
   {%- endfor -%}
-  
-  <!-- 新增：直接在导航栏显示搜索框 -->
-  {% if site.post_search %}
-    <li class="nav-item" id="nav-search-inline">
-      <form class="form-inline" role="search" onsubmit="return false;">
-        <input type="text" id="nav-search-input-inline" class="form-control nav-search-input" placeholder="搜索文章..." aria-label="搜索">
-      </form>
-    </li>
-  {%- endif -%}
 </ul>
   </div>
 
