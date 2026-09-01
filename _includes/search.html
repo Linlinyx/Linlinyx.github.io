@@ -1,25 +1,46 @@
 {% if site.post_search %}
 
-<!-- 覆盖层（点击搜索图标弹出） -->
-<div id="beautifuljekyll-search-overlay">
-  <div id="nav-search-exit" title="Exit search">✕</div>
-  <input type="text" id="nav-search-input" placeholder="搜索文章...">
+<!-- 搜索结果覆盖层 -->
+<div id="beautifuljekyll-search-overlay" style="display: none;">
+  <div id="nav-search-exit" title="关闭搜索">✕</div>
   <ul id="search-results-container"></ul>
 </div>
 
+<script src="https://unpkg.com/simple-jekyll-search@latest/dest/simple-jekyll-search.min.js"></script>
 <script>
   document.addEventListener('DOMContentLoaded', function() {
-    var searchJson = '{{ site.baseurl }}/searchcorpus.json';  // 改为根目录的路径
-    
-    var inlineInput = document.getElementById('nav-search-input-inline');
-    if (inlineInput) {
+    var searchJson = '{{ site.baseurl }}/searchcorpus.json';
+    var input = document.getElementById('nav-search-input-inline');
+    var overlay = document.getElementById('beautifuljekyll-search-overlay');
+    var exitBtn = document.getElementById('nav-search-exit');
+    var resultsContainer = document.getElementById('search-results-container');
+
+    if (input) {
+      // 当输入框获得焦点时，显示覆盖层
+      input.addEventListener('focus', function() {
+        if (overlay) overlay.style.display = 'block';
+      });
+
+      // 点击关闭按钮隐藏覆盖层
+      if (exitBtn) {
+        exitBtn.addEventListener('click', function() {
+          if (overlay) overlay.style.display = 'none';
+          input.value = '';
+          resultsContainer.innerHTML = '';
+        });
+      }
+
+      // 初始化搜索
       SimpleJekyllSearch({
-        searchInput: inlineInput,
-        resultsContainer: document.getElementById('search-results-container'),
+        searchInput: input,
+        resultsContainer: resultsContainer,
         json: searchJson,
         searchResultTemplate: '<li><a href="{url}">{title}</a></li>',
-        noResultsText: '没有找到文章'
+        noResultsText: '没有找到文章',
+        limit: 10  // 最多显示 10 条结果
       });
+    } else {
+      console.error('搜索输入框 #nav-search-input-inline 未找到');
     }
   });
 </script>
